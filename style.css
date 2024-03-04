@@ -268,5 +268,16 @@ main{
             display: flex;
             flex-direction: column;
             row-gap: 1rem;
+        }
+         .input input {
+            height: 110rem;}
+            .input input, .input a {
+            text-align: center;
+            }
 
+            footer {
+                flex-direction: column;
+                row-gap: 2rem;
+            }
+    }
 
