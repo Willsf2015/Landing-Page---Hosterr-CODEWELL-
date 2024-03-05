@@ -36,21 +36,23 @@
         <a id="sign-in" href="">Sign in</a
         ><a class="waitlist" href="">Join Waitlist</a>
       </div>
-      <div class="mobile-menu-icon">
-        <button onclick="menuShow()">
-          <i class="bi bi-list"></i>
+      <div  class="mobile-menu-icon">
+        <button onclick="menuShow()" class="button">
+          <img id="list"src="list.svg" alt="">
         </button>
+        <button class="button-close">
+        <img onclick="menuClose()" id="x-circle"src="x-circle.svg" alt="">
+      </button>
       </div>
     </header>
     <div class="mobile-menu">
-      <div class="links">
-        <a href="">Plans</a><a href="">Find Domain</a><a href="">Why Hosterr</a>
-      </div>
-      <div class="join">
-        <a id="sign-in" href="">Sign in</a
-        ><a class="waitlist" href="">Join Waitlist</a>
-      </div>
-    </div>
+      <ul>
+        <li><a href="">Plans</a></li>
+        <li><a href="">Find Domain</a></li>
+        <li><a href="">Why Hosterr</a></li>
+        <li><a href="">Sign in</a></li>
+        <li class="waitlist-mobile"><a  href="">Join Waitlist</a></li>
+    </div>      
     <main>
       <div class="left-side">
         <div class="h1"><h1>Host your website in less than 5 minutes.</h1></div>
