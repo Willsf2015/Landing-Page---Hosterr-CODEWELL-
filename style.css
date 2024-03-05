@@ -86,6 +86,7 @@
 
 main{
     display: flex;
+    justify-content: space-between;
     padding: 11rem 7rem 15rem 7rem
 }
 
@@ -181,28 +182,31 @@ main{
  #main-font {
     font-size: 1.6rem;
     font-weight: bold;
+    
  }
 
  .mobile-menu-icon {
     display: none;
  }
- .mobile-menu {
-    display: none;
- }
+
+
 
 .mobile-menu-icon button{
     background-color:transparent;
     cursor: pointer;
  }
 .mobile-menu ul {
-   display:block;
+
    text-align: center;
    row-gap: 3rem;
    align-items: center;
 }
 
 .mobile-menu {
-   padding-bottom: 2.5rem;
+   padding-bottom: 0rem;
+   height: 0;
+   overflow: hidden;
+   transition: height 1s ease-in-out;
 }
 
 .mobile-menu ul li {
@@ -230,6 +234,7 @@ li.waitlist-mobile {
    background-color:var(--color-waitlist);
    width: 100%;
    border-radius: 5px;
+   
    
 
 }
@@ -273,9 +278,8 @@ li.waitlist-mobile {
     main {
         display: flex;
         flex-direction:column-reverse;
-        padding:0;
-    }
-    main .right-side img {
+        padding: 2rem 0 0 0;
+    .main .right-side img {
         width: 75%;
      }
      .right-side {
