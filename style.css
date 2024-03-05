@@ -86,7 +86,7 @@
 
 main{
     display: flex;
-    padding: 11rem 0 15rem 0;
+    padding: 11rem 7rem 15rem 7rem
 }
 
  .left-side {
@@ -190,27 +190,86 @@ main{
     display: none;
  }
 
- .mobile-menu-icon button{
+.mobile-menu-icon button{
     background-color:transparent;
-    font-size: 3rem;
     cursor: pointer;
  }
+.mobile-menu ul {
+   display:block;
+   text-align: center;
+   row-gap: 3rem;
+   align-items: center;
+}
+
+.mobile-menu {
+   padding-bottom: 2.5rem;
+}
+
+.mobile-menu ul li {
+   font-size: 1.6rem;
+   color: var(--main-text-color);
+   padding: 1.5rem 0 1.5rem 0;
+}
+
+.mobile-menu ul li:hover{
+border: 2px solid var(--main-text-color);
+border-radius: 5px;
+transition: 300ms ease-in;
+}
+.mobile-menu ul li:not(.waitlist-mobile) a:visited {
+   color:var(--main-text-color)
+}
+
+.mobile-menu ul li:not(.waitlist-mobile) a:hover {
+   transition: 300ms ease-in;
+   color:black;
+   
+}
+
+li.waitlist-mobile {
+   background-color:var(--color-waitlist);
+   width: 100%;
+   border-radius: 5px;
+   
+
+}
+
+.waitlist-mobile a:visited {
+   color: var(--color-background)
+}
+
+.waitlist-mobile a {
+   color: var(--color-background)
+}
+
+.waitlist-mobile a:hover {
+   color: white;
+   transition: 300ms ease-in;
+   
+}
+
+.button-close {
+   display: none;
+}
+#list, #x-circle {
+   width: 3rem;
+   position: absolute;
+   top:4rem;
+   right: 3rem;
+}
 
  @media screen and (max-width:780px) {
+   
+
+
+
     .links, .join {
         display: none;
     }
     .mobile-menu-icon {
         display: block;
     }
-    .mobile-menu {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-    .open {
-        display: block;
-    }
+   
     main {
         display: flex;
         flex-direction:column-reverse;
@@ -268,11 +327,12 @@ main{
             display: flex;
             flex-direction: column;
             row-gap: 1rem;
-        }
+         }        
+
          .input input {
             height: 110rem;}
             .input input, .input a {
-            text-align: center;
+                text-align: center;
             }
 
             footer {
@@ -280,4 +340,3 @@ main{
                 row-gap: 2rem;
             }
     }
-
